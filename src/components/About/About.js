@@ -25,7 +25,7 @@ const About = () => {
                 <div className='card-body'>
                   <h5 className='card-title about' style={{borderBottom: '1px solid black'}}>About me</h5>
                   <div className='row'>
-                    <img src='/build/img/profile.jpg' alt='placeholder' style={{width: '700px', height: '400px', marginLeft:'10px'}} />
+                    <img src={process.env.PUBLIC_URL + '/img/profile.jpg'} alt='placeholder' style={{width: '700px', height: '400px', marginLeft:'10px'}} />
                     <p className='col-md-10 card-text'>Hello and welcome to my portfolio. My name is Jhonny Lin and I am currently a Full stack web developer. My expertise are, but not limited to, React, jQuery, REST API, handlebars, node.js, mongoDB, MySQL, and express. In this site, you will be able to see some of my most prominent works. Which, you can find if you click on the portfolio section website. In addition, you can also take a look at my resume.<br />
                     A little bit more about me, I graduated from University of Toronto with a degree in Anthropology and have a certificate in full stack web development. Using my degree as an anthropologist and my expertise in web development I have always paid attention and focused on making my websites and apps user friendly. 
                     If you are interested in what I do. Feel free to either reach me by phone: <strong>+1 (289) 952-3542</strong>, email: <a href='mailto:jhonnylin72@gmail.com'>jhonnylin72@gmail.com</a> or through any of my social media pages.</p>
@@ -46,7 +46,7 @@ const About = () => {
                           onClick={handleShow}
                       />
                       <p className='card-text'>Click on the image to get more details of the resume</p>
-                      <a href='/Resume.pdf' download><button className='btn btn-primary'>download</button></a>
+                      <a href={process.env.PUBLIC_URL + '/Resume.pdf'} download><button className='btn btn-primary'>download</button></a>
                     </div>
                   </div>
                 </div>
@@ -73,13 +73,13 @@ const About = () => {
       <Modal.Body>
         <Carousel>
           <Carousel.Item>
-            <img src='/build/img/Resume_screenshot1.png' className='d-block w-100' alt='Resume first page' />
+            <img src={process.env.PUBLIC_URL + '/img/Resume_screenshot1.png'} className='d-block w-100' alt='Resume first page' />
           </Carousel.Item>
           <Carousel.Item>
-            <img src='/build/img/Resume_screenshot2.png' className='d-block w-100' alt='Resume second page' />
+            <img src={process.env.PUBLIC_URL + '/img/Resume_screenshot2.png'} className='d-block w-100' alt='Resume second page' />
           </Carousel.Item>
         </Carousel>
-        <a href='/Resume.pdf' download className='d-flex align-items-end flex-column'><button className='btn btn-primary'>Download</button></a>
+        <a href={process.env.PUBLIC_URL + '/Resume.pdf'} download className='d-flex align-items-end flex-column'><button className='btn btn-primary'>Download</button></a>
       </Modal.Body>
     </Modal>
     </div>
