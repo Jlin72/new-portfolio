@@ -1,0 +1,26 @@
+.nav {
+  background-color: slategrey;
+  
+}
+
+.nav-link {
+  color: white;
+}
+
+.nav-link:hover {
+  color: lightsalmon
+}
+
+.isactive {
+  color: yellow
+}
+
+.navbar-toggler {
+  color: white;
+  border-color: white
+}
+
+.navbar-toggler-icon {
+  color: white;
+  border-color: white;
+}

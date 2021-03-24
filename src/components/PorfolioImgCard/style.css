@@ -1,0 +1,44 @@
+.container {
+  position: relative;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.c {
+  position: absolute;
+  max-width: 500px;
+  max-height: 500px;
+  width: 30ch;
+  height: 30ch;
+  cursor: pointer;
+  will-change: transform, opacity;
+  border-radius: 5px;
+}
+
+.overlay {
+  position: relative;
+  max-width: 500px;
+  max-height: 500px;
+  width: 30ch;
+  height: 30ch;
+  cursor: pointer;
+  will-change: transform, opacity;
+  border-radius: 5px;
+}
+
+.insideOverlay {
+  margin: 5px 5px 5px 5px
+}
+
+.front,
+.back {
+  background-size: cover;
+}
+
+.back {
+  color: white;
+}
+
+.repoButton {
+  margin-right: 15px;
+}
