@@ -5,7 +5,6 @@ import Wrapper from '../components/Wrapper/Wrapper';
 const Contact = () => {
   return(
     <Wrapper>
-      {console.log(window.location)}
       <ContactCard />
     </Wrapper>
   )
